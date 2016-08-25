@@ -53,16 +53,12 @@ import UIKit
             var index = dist.endIndex
             var found = false
             
-            while true {
+            while index != dist.startIndex {
                 index = index.predecessor()
                 let c = dist.characters[index]
                 
                 if c == "/" {
                     found = true
-                    break
-                }
-                
-                if index == dist.startIndex {
                     break
                 }
             }
